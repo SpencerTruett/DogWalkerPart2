@@ -74,7 +74,7 @@ namespace PawsitivelyBestDogWalkerPart2.Data
                 conn.Open();
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
-                    cmd.CommandText = "SELECT Name FROM Dog WHERE Id = @id";
+                    cmd.CommandText = "SELECT Name, OwnerId, Breed, Notes FROM Dog WHERE Id = @id";
                     cmd.Parameters.Add(new SqlParameter("@id", id));
                     SqlDataReader reader = cmd.ExecuteReader();
 
