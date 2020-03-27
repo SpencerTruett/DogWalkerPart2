@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PawsitivelyBestDogWalkerPart2.Models
 {
-    class Dog
+    public class Dog
     {
         public int Id { get; set; }
         public string Name { get; set; }

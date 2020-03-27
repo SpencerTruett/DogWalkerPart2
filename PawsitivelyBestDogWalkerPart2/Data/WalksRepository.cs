@@ -6,7 +6,7 @@ using System.Text;
 
 namespace PawsitivelyBestDogWalkerPart2.Data
 {
-    class WalksRepository
+    public class WalksRepository
     {
         public SqlConnection Connection
         {
